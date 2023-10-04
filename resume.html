@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Ikbal's Resume</title>
+    <script>
+        let a;
+        let time;
+        let date;
+        const options={weekday: 'long' ,year:'numeric',month:'long',day:'numeric'};
+        setInterval(()=>{
+        a = new Date();
+         date=a.toLocaleDateString(undefined,options);
+         time=a.toLocaleTimeString();
+
+        //  time=a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML= time + " "+ " <br>Date is:" +" "+ date;
+        },1000); 
+        </script>
+</head>
+<body>
+    <header id="main_cnt">
+        <nav >
+            <ul id="navigat">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#about-id">ABOUT</a>
+            </li>
+            <li>
+                <a href="#skill-id">SKILL</a>
+            </li>
+           
+            <li>
+                <a href="#work-id">EXPERIENCE</a>
+            </li>
+            <li>
+                <a href="#Education-id">EDUCATION</a>
+            </li>
+
+          
+            </ul>
+            <div class="tim">
+                <div class="inn">
+                  <p>Time is : <span id="time"></span></p>
+                </div>
+              </div>
+        </nav>
+        <div id="name">
+            <P>IKBAL AHMAD</P>
+        </div>
+        <div >
+            <ul id="icon">
+            <li>
+                <a href="https://www.linkedin.com/in/ikbal-ahmad-424713230/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/Ikbalahmad019?t=_OWN3ayQptLgh0jA9F_8Mg&s=09" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailot:sikbalahmad007@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/12CBr-06iDv5BmaNFpX8jvF1OSKlZ4DS0/view?usp=sharing" target="_blank">
+                    <i class="fa-solid fa-file"></i>
+                </a>
+            </li>
+            </ul>
+            </div>
+            
+    </header>  
+    <div class="circular--portrait"> 
+        <img src="C:\Users\sikbal_ahmad\Documents\ikbdp.jpg" /> 
+    </div>
+<div class="box">
+    <h1 class="ab-h1">
+        <a href="#" id="about-id">
+        <i class="fa-solid fa-newspaper"></i>
+        </a>
+
+       &nbsp This is about section
+    </h1>
+    <a class="about-section">
+         
+        <p> My name is IKBAL AHMAD.I am from MIRZAPUR UTTER PRADESH.</p>
+        <p>  I am currently pursuing B.tech form Nit Agartala.</p>
+        <p>  My major is ECE.My current CGPA is 8.66. I have interest in Tech.</p>
+        </a>
+  </div>
+
+
+
+
+   <section class="skill-section">
+    <h1 class="sk-h1">
+        <a href="#" id="skill-id">
+        <i class="fas fa-chalkboard-teacher"></i>
+        </a>
+
+       &nbsp This is Skill section</h1>
+       <!-- <div id="ikb"> <a href="#sikbal" tagret="blank">Aukat dekhega</a></div>
+    </h1>
+    <div id="sikbal"> 
+        <a href="#ikb"> wapas ja</a> -->
+    <!-- c++ -->
+      <div class="sk-disp">
+      <div class="sk-prg">
+         <div class="eighty-five-percent mb-blue">
+             <div class="sk-name">
+               <span>c++</span>
+             </div>
+
+         </div>
+         
+      </div>
+      </div>
+
+     <!-- html -->
+      <div class="sk-disp">
+        <div class="sk-prg">
+           <div class="sixty-five-percent mb-red">
+               <div class="sk-name">
+                 <span>HTML</span>
+               </div>
+  
+           </div>
+           
+        </div>
+        </div>
+
+        <!-- javascript -->
+        <div class="sk-disp">
+            <div class="sk-prg">
+               <div class="sixty-five-percent mb-green">
+                   <div class="sk-name">
+                     <span>Javascript</span>
+                   </div>
+      
+               </div>
+               
+            </div>
+            </div>
+
+            <!-- data structure -->
+        <div class="sk-disp">
+            <div class="sk-prg">
+               <div class="sixty-five-percent mb-voilet">
+                   <div class="sk-name">
+                     <span>DSA</span>
+                   </div>
+      
+               </div>
+               
+            </div>
+            </div>
+
+            <!-- SQL -->
+        <div class="sk-disp">
+            <div class="sk-prg">
+               <div class="sixty-five-percent mb-yellow">
+                   <div class="sk-name">
+                     <span>SQL</span>
+                   </div>
+      
+               </div>
+               
+            </div>
+            </div>
+
+            <!-- Oops -->
+        <div class="sk-disp">
+            <div class="sk-prg">
+               <div class="sixty-five-percent mb-orange">
+                   <div class="sk-name">
+                     <span>Oops </span>
+                   </div>
+      
+               </div>
+               
+            </div>
+            </div>
+   </section>
+
+   <!-- work experience -->
+   <section>
+    <h1 class="wk-h1">
+        <a href="#" id="work-id">
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+
+       &nbsp This is Experience section</h1>
+
+
+      <div class="work">        
+        <div class="inner-div">
+            <h1>Cricket</h1>
+            <p>I was the capation of criket team of my school</p>
+        </div>
+        <div class="inner-div">
+            <h1>Leetcode</h1>
+            <p>Solved 250+ questions on Leetcode</p>
+        </div>
+        <div class="inner-div">
+            <h1>Codechef</h1>
+            <p>I am three star on codechef</p>
+        </div>
+        <div class="inner-div">
+            <h1>Aur kuch</h1>
+            <p>aur kuch v na ukhara hu</p>
+        </div>
+       <div class="divider">
+         <div class="plane">
+            <i class="fas fa-plane"></i>
+         </div>
+       </div>
+      </div>
+   </section>
+
+   <!-- education -->
+   <section>
+    <h1 class="wk-h1">
+        <a href="#" id="Education-id">
+            <i class="fa-solid fa-school"></i>
+        </a>
+
+       &nbsp This is my Education</h1>
+
+
+      <div class="work">        
+        <div class="inner-div">
+            <h1>B.tech</h1>
+            <p>I am currently pursuing b.etch form NIT Agartala </p>
+            <p>Batch 2025</p>
+        </div>
+        <div class="inner-div">
+            <h1>Intermediate</h1>
+            <p>I completed class 12 form JNV MIRZAPUR in 2019</p>
+        </div>
+        <div class="inner-div">
+            <h1>High School</h1>
+            <p>I completed class 10 form JNV MIRZAPUR in 2017</p>
+        </div>
+       <div class="divider">
+         <div class="car">
+            <i class="fa-solid fa-car"></i>
+         </div>
+       </div>
+       <div class="divider2">
+        
+      </div>
+      
+      </div>
+   </section>
+   <div class="kkd">
+
+   </div>
+</body>
+</html>
